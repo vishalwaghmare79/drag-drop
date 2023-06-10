@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <title>Drag and Drop functionality</title>
+</head>
+<body>
+   <!-- Heading -->
+   <h1 class="heading">Drag and Drop functionality</h1>
+
+   <!-- Main container -->
+   <div class="main-containar">
+       <!-- Container 1 for draggable items -->
+       <div id="container1" class="containar">
+           <div class="item" draggable="true"><h3>Item 1</h3></div>
+           <div class="item" draggable="true"><h3>Item 2</h3></div>
+           <div class="item" draggable="true"><h3>Item 3</h3></div>
+       </div>
+
+       <!-- Container 2 for dropping items -->
+       <div div id="container2" class="containar target-container">
+           <span id="placeholder" class="placeholder">Drop items here</span>
+       </div>
+   </div>
+
+   <!-- Button container -->
+   <div class="button">
+      <!-- Success message container -->
+      <div id="successMessage" class="success-message" style="display: none;"></div>
+       <!-- Reset button -->
+       <button class="btn" onclick="resetContainers()">Reset</button>
+   </div>
+</body>
+<script type="text/javascript" src="script.js"></script>
+</html>
